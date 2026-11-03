@@ -1,0 +1,22 @@
+{
+  "name": "valentius-kryptix-llm-chatbot",
+  "version": "1.0.0",
+  "description": "Multi-turn chatbot backed by the Google Gemini API with real context window management (truncation + running summary), a defined system-prompt persona, error handling, and env-based key storage.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node cli.js",
+    "test": "node test/run-e2e.mjs",
+    "test:summary": "node test/run-summary.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0"
+  },
+  "license": "MIT"
+}
